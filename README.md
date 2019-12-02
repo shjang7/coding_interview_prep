@@ -1,2 +1,46 @@
 # coding_interview_prep
-preparation summary
+- single-number
+  - ruby
+```
+reduce(:^)
+```
+
+- max-int
+  - c++
+```
+#include <limits>
+std::numeric_limits<int>::max();
+```
+
+- Stdin
+  - ruby
+```
+gets.chomp
+```
+  - c++
+```
+std::cin
+```
+  - javascript
+```
+const readline = require('readline');
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+  terminal: false
+});
+const data = [];
+let countOfCase = null;
+rl.on('line', function(line){
+  if(countOfCase === null) {
+    countOfCase = line;
+  } else {
+    data.push(line.split(' '));
+    countOfCase -= 1;
+    if (countOfCase === 0) {
+      solve();
+      rl.close();
+    }
+  }
+}
+```
