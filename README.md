@@ -1,4 +1,16 @@
 # coding_interview_prep
+- trapping rain water
+  - dynamic programming
+  - cap left to right maximum
+  - cap right to left maximum
+  - each cap_minimum - height
+  - exception: below 2 -> cannot trap
+
+- three sum
+  - sort
+  - indexing s, l, r
+  - unique: s - 1 != s, l - 1 != l, r + 1 != r 
+
 - sort list
   - find middle: using slow and fast pointer
   - return mergeSorting(sort(head), sort(mid));
