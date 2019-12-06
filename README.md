@@ -41,11 +41,29 @@
   arr.reduce((accumulator, n) => accumulator ^ n, 0)
   ```
 
+- heap
+  - c++
+  ```
+  (descending order, from big number is on the top)
+  priority_queue<int, vector<int>, greater<int>> pq;
+  pq.push(value);
+  pq.top();
+  pq.pop();
+  ```
+
+- array
+  - c++
+  ```
+  vector<int> v;
+  v.resize(3);
+  ```
+
 - sort()
   - c++
   ```
   ascending order: sort(v.begin(), v.end())
   descending order: sort(v.begin(), v.end(), greater<int>())
+  static bool compare(const vector<int>& a, const vector<int>& b) { }
   sort(v.begin(), v.end(), compare);
   ```
   - ruby
