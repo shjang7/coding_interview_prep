@@ -1,9 +1,30 @@
 # coding_interview_prep
+- [Must do Easy Questions](https://leetcode.com/list/xix1yu51/)
+- [Must do Medium Questions](https://leetcode.com/list/xixy4dq7/)
+
+- roman to integer
+  - IV, IX, XL, XC, ... -> (-1+5), (-1+10), (-10+50), (-10+100)
+
+- algorithm: unique binary search tree
+  - Catalan number algorithm
+    C(n+1) = 2(2n+1) / (n+2) * C(n)
+    ```
+    long long c = 1;
+    for(int i = 0; i < n; i++) {
+        c = c * 2*(2*i+1) / (i+2);
+    }
+    return (int)c;
+    ```
+
 - sub array sum equals k
   - O(n) time, space complexity
   - sum hashmap, range sum
   - count += map[sum - k]
   - k: 7, map[2], map[9 - 7]: 2~9
+
+- sub-tree of another tree
+  - Traverse tree
+  - Check equal
 
 - trapping rain water
   - dynamic programming
@@ -98,6 +119,10 @@
 
 - max-int
   - c++
+  ```
+  INT_MAX
+  INT_MIN
+  ```
   ```
   #include <limits>
   std::numeric_limits<int>::max();
