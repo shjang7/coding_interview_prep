@@ -5,6 +5,57 @@
 - roman to integer
   - IV, IX, XL, XC, ... -> (-1+5), (-1+10), (-10+50), (-10+100)
 
+- merge sorted array
+  - from back to front
+
+- linked list cycle
+  - HashMap: O(n), O(n)
+  - two pointers: O(m+n), O(1)
+
+- minimum stack
+  - minimum heap
+  - stack
+
+- rotate array
+  - using extra space: O(n), O(n)
+  - using STL rotate: O(n), O(1)
+  ```
+  k %= n;
+  right: std::rotate(nums.begin(), nums.begin()+n-k, nums.end());
+  left: std::rotate(nums.begin(), nums.begin()+k, nums.end());
+  ```
+  - reverse array: O(n), O(1)
+  ```
+  reverse(arr, 0, n-1)
+  reverse(arr, 0, k-1)
+  reverse(arr, k, n-1)
+  ```
+
+- happy number
+  - next number: calculate each digits with squares
+  - happy number: ending with 1
+  - unhappy number: cycle -> recognize with HashSet
+
+- count primes
+  - Eratosthenes sieve algorithm
+    ```
+    prime[n]
+    0, 1 -> 0
+    for i -> 2 ~ sqrt(n)-1
+      if prime[i]
+        for j -> i*i ~ n-1, +i
+          prime[j] = 0
+    count = 0
+    for p in prime
+      if(p) count++
+    count
+    ```
+
+- isomorphic
+  - first -> second unique connection
+  - second unique new
+  - HashMap, HashSet
+
 - algorithm: unique binary search tree
   - Catalan number algorithm
     C(n+1) = 2(2n+1) / (n+2) * C(n)
@@ -65,8 +116,8 @@
 - heap
   - c++
   ```
-  (descending order, from big number is on the top)
-  priority_queue<int, vector<int>, greater<int>> pq;
+  desc: priority_queue<int, vector<int>, less<int>> pq;
+  asc: priority_queue<int, vector<int>, greater<int>> pq;
   pq.push(value);
   pq.top();
   pq.pop();
