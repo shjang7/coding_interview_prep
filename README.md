@@ -56,6 +56,26 @@
   - second unique new
   - HashMap, HashSet
 
+- invert binary tree
+  - simply invert with traversing anyway
+
+- sum of two integers without + or -
+  - bit operation, recursive addition
+  - a ^ b, ((unsigned int)a & b) << 1
+  ```
+  int getSum(int a, int b) {
+      unsigned int carry = (unsigned int) a & b;
+      return (b == 0) ? a : getSum(a ^ b, (int)(carry << 1));
+  }
+  ```
+
+- find disappeared numbers in an array
+  - the array fills from 1 to n
+  - visited check with negative number
+  ```
+  arr[n] *= -1
+  ```
+
 - algorithm: unique binary search tree
   - Catalan number algorithm
     C(n+1) = 2(2n+1) / (n+2) * C(n)
@@ -73,9 +93,39 @@
   - count += map[sum - k]
   - k: 7, map[2], map[9 - 7]: 2~9
 
-- sub-tree of another tree
+- subtree of another tree
   - Traverse tree
   - Check equal
+
+- can place flowers
+  - check case by case
+  - checking left to right place-able
+  - left should not be filled or out of range
+  - right should not be filled or out of range
+  - O(n), O(1)
+
+- non decreasing array
+  - decrease case should be one
+  - check case by case
+  - p is first or last is safe, otherwise, p-1 and p+1 or p and p+2 should be increase
+
+- trim a binary search tree
+  - recursive way
+  - base case: root val in range -> not? return left recursive or right recursive
+  - in range : connect left and right recursive
+
+- longest continuous increasing subsequence
+  - sliding window, O(n), O(1)
+
+- kth largest element in a stream
+  - heap sort, priority queue with greater, top
+
+- find words that can be formed by characters
+  - option 1 : copy hashmap, minus check
+  - option 2 : stl string count char compare
+  ```
+  count(w.begin(), w.end(), c)
+  ```
 
 - trapping rain water
   - dynamic programming
@@ -135,6 +185,7 @@
   ```
   ascending order: sort(v.begin(), v.end())
   descending order: sort(v.begin(), v.end(), greater<int>())
+  sort(v.begin(), v.end(), [](const int& a, const int& b){ return a > b; });
   static bool compare(const vector<int>& a, const vector<int>& b) { }
   sort(v.begin(), v.end(), compare);
   ```
@@ -178,6 +229,10 @@
   #include <limits>
   std::numeric_limits<int>::max();
   ```
+
+- c++ 11
+  - int a{};
+    - default initializer
 
 - Stdin
   - ruby
