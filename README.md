@@ -127,6 +127,22 @@
   count(w.begin(), w.end(), c)
   ```
 
+- longest palindrome substring
+  - [manachar algorithm](./practice/manachar_algorithm.cpp), O(n), O(n)
+  - [expand around center](./practice/expand_around_center.rb), O(n^2), O(1)
+
+- container with most water
+  - two pointer(l, r, maxarea)
+  - h[l] < h[r] ? l++ : r--
+  - O(n), O(1)
+
+- letter combinations of a phone number
+  - backtracking
+
+- generate parenthesis
+  - disjoint subset
+  - time and space complexity: O(4^n / √n)
+
 - trapping rain water
   - dynamic programming
   - cap left to right maximum
