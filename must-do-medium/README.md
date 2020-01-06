@@ -95,24 +95,20 @@
         merged.back()[1] = max(merged.back()[1], interval[1])
   ```
 
-- decode variations
-  - dynamic programming
-  ```
-  function decodeVariations(S):
-    N = S.length
-    dp = new Array(N)
-    dp[N] = 1
-    for i from N-1 to 0:
-        if S[i] == '0':
-            dp[i] = 0
-        else if S[i] == '1':
-            dp[i] = dp[i+1] + dp[i+2]
-        else if S[i] == '2':
-            dp[i] = dp[i+1]
-            if i+1 < S.length && S[i+1] <= '6':
-                dp[i] += dp[i+2]
-        else:
-            dp[i] = dp[i+1]
+- sort German flag colors
+  - zero: 0, two: nums.size() - 1, i = 0
+  - 0: swap current and next zero, zero++, i++
+  - 2: swap current and next two, two--
 
-    return dp[0]
-  ```
+- binary tree traversal without recursion
+  - using stack
+
+- Construct Binary Tree from Inorder and Postorder Traversal
+  - traverse : postorder like preorder
+  - index : using inorder with Hash-Map
+  - in range : left, right
+
+- Populating next right pointers in each node ii
+  - prev, leftmost
+  - prev->next = child
+  - curr = curr->next

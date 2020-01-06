@@ -142,10 +142,6 @@
   - find middle: using slow and fast pointer
   - return mergeSorting(sort(head), sort(mid));
 
-- sort German flag colors
-  - 0: swap current and next zero
-  - 2: swap current and next two
-
 - two dimensional array
   - javascript
   ```
