@@ -122,3 +122,22 @@
   - var: head, tail, cache
   - func: add_to_head, move_to_head, remove_node, pop_tail
   - struct: key, val, prev, next
+
+- fraction to decimal
+  - result: string
+  - devision sign: +/-
+  - calculate with absolute value
+  - check[n] = result.length
+  - result.insert
+
+- largest number by string sort
+  ```
+  def comp
+    order1 = a + b
+    order2 = b + a
+    order1 <=> order2
+  end
+
+  res = ~~~
+  res[0] == '0' ? '0' : res
+  ```
