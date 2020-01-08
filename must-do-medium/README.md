@@ -112,3 +112,8 @@
   - prev, leftmost
   - prev->next = child
   - curr = curr->next
+
+- Linked List Cycle: return the node where the cycle begins
+  - phase 1: hare - tortoise algorithm
+  - phase 2: one starts from meeting point, one starts from head, the meeting point equals first begin cycle
+  - [proof about phase 2](./../practice/proof_of_cycle_begin.txt)

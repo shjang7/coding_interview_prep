@@ -1,0 +1,23 @@
+Phase 1 : hare and tortoise meet in cycle
+Phase 2 : one starts from Phase 1 point, one starts from initial point, and they meet at the point of cycle begin
+p = hare position
+q = tortoise position
+k = hare and tortoise meeting point
+m = distance between initial point and starting of the cycle
+l = the length of the cycle
+
+Dist_p = m + p * l + k
+Dist_q = m + q * l + k
+* Basically, p moves twice quicker than q
+Dist_p = 2 * Dist_q
+m + p * l + k = 2 * (m + q * l + k)
+0 = m + (2ql - pl) + k
+0 = m + k + l(2q - p)
+l(p - 2q) = m + k
+* p - 2q is integer a
+a*l - k = m
+a=1 => l - k = m
+a=2 => 2l - k = m
+a=3 => 3l - k = m
+Therefore, in phase 2 movement, the one starts from k, after m movement, it locates at the point of cycle begin.
+So, another one starts from initial point moves m, the two will meet.
