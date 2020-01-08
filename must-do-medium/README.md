@@ -2,8 +2,8 @@
 - [Must do Medium Questions](https://leetcode.com/list/xixy4dq7/)
 
 - longest palindrome substring
-  - [manachar algorithm](./practice/manachar_algorithm.cpp), O(n), O(n)
-  - [expand around center](./practice/expand_around_center.rb), O(n^2), O(1)
+  - [manachar algorithm](./../practice/manachar_algorithm.cpp), O(n), O(n)
+  - [expand around center](./../practice/expand_around_center.rb), O(n^2), O(1)
 
 - container with most water
   - two pointer(l, r, maxarea)
@@ -117,3 +117,8 @@
   - phase 1: hare - tortoise algorithm
   - phase 2: one starts from meeting point, one starts from head, the meeting point equals first begin cycle
   - [proof about phase 2](./../practice/proof_of_cycle_begin.txt)
+
+- LRU Cache
+  - var: head, tail, cache
+  - func: add_to_head, move_to_head, remove_node, pop_tail
+  - struct: key, val, prev, next
