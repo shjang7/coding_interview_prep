@@ -1,5 +1,12 @@
 # mock interviews
 
+- pow(x, n)
+  - fastPow,
+  - n = 9 -> half = fastPow(x, 8/2)
+  - half * half * x
+  - n = 4 -> half = fastPow(x, 4/2)
+  - half * half
+
 - decode variations
   - dynamic programming
   ```
@@ -21,3 +28,6 @@
 
     return dp[0]
   ```
+
+- priority queue
+  - meeting rooms 2: sort, priority queue greater top

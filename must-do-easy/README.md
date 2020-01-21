@@ -193,6 +193,7 @@
   - javascript
   ```
   ascending order: arr.sort((a, b) => a - b)
+  descending order: arr.sort((a, b) => a < b)
   ```
 
 - reduce()

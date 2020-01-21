@@ -124,11 +124,10 @@
   - struct: key, val, prev, next
 
 - fraction to decimal
-  - result: string
-  - devision sign: +/-
-  - calculate with absolute value
+  - string
+  - sign: +/-, abs
   - check[n] = result.length
-  - result.insert
+  - result.insert(check[n], "(") << ")"
 
 - largest number by string sort
   ```
