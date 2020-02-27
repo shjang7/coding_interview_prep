@@ -23,6 +23,21 @@
   - arrow function: 'this' indicates current object
 
 ## JS remind
-### What can node.js do?
-- generate dynamic page 'content'
-- CRUD: create, open, write, delete, close files on the server
+- What can node.js do?
+  - generate dynamic page 'content'
+  - CRUD: create, open, write, delete, close files on the server
+- js mouse events: mouse events: mousedown, mouseup and click, dblclick, mousemove and finally mouseover and mouseout
+- slice method in array and string
+- arr.replace("hello", "world")
+- arr.splice(1,2)
+- const d = new Date()
+- d.getFullYear()
+- d.getMonth()
+- Math.random()
+- Math.sqrt(9)
+- switch / case / default
+- for (x in fruits)
+- document.getElementsByTagName("p")[0]
+- document.getElementsByClassName("test")[0]
+- document.getElementById("demo").style.fontSize = "40px";
+- element.addEventListener("click", func)
