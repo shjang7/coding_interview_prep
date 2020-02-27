@@ -5,6 +5,7 @@
 - arr.insert(2, 8) -> [x,x,8,x,x]
 - arr.delete_at(2)
 - [1,2,3] * 3 -> [1,2,3,1,2,3,1,2,3]
+- puts arr -> each element print at seperate line.
 - array methods: length, sort, uniq, feeze, include?(obj), min, max
 
 ### [hash]
