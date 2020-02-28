@@ -15,3 +15,11 @@
 - hash.invert: creates hash reversing keys and values
 - hash.key(value): returns key for the given value
 - hash.delete(key)
+
+### [Method]
+- Methods should be defined before calling them, otherwise Ruby will raise an error.
+- The actual parameter value is called an argument.
+- product (multiplication)
+- leave off the parentheses when using methods: more fluid reading of code
+- gets.chomp is used to take user input and strip the newline at the end of the input.
+- optional parameters(**p*): If you call the method without any arguments, the array p will be empty.
