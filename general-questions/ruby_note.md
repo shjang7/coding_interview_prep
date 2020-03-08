@@ -23,3 +23,9 @@
 - leave off the parentheses when using methods: more fluid reading of code
 - gets.chomp is used to take user input and strip the newline at the end of the input.
 - optional parameters(**p*): If you call the method without any arguments, the array p will be empty.
+
+### [Module]
+- 'able' suffix ex) Flyable, Swimmable, Runnable
+- when to choose
+  * mixins used by multiple class
+  * has-a relationship : modules / is-a relationship : class inheritance

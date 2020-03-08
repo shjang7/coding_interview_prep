@@ -41,3 +41,4 @@
 - document.getElementsByClassName("test")[0]
 - document.getElementById("demo").style.fontSize = "40px";
 - element.addEventListener("click", func)
+- javascript numbers are always stored as double precision floating point numbers
