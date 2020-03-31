@@ -1,4 +1,7 @@
 # mock interviews
+- nim game
+  - find pattern 1,2,3,4,5,6, ...
+  - considering like staircase problem solving
 
 - pow(x, n)
   - fastPow,

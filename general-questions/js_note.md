@@ -42,3 +42,13 @@
 - document.getElementById("demo").style.fontSize = "40px";
 - element.addEventListener("click", func)
 - javascript numbers are always stored as double precision floating point numbers
+- The Boolean value of 0 (zero), null, undefined, empty string is false.
+- The Boolean value of 0, null, undefined, empty string is false. cp) ruby - false / nil is only false
+- document.getElementById(id) / document.getElementsByClassName(name) / document.getElementsByTagName(name)
+- elem.innerHTML = "Hello World!";
+- element.cloneNode() / document.createElement(element) / document.createTextNode(text)
+- parent.removeChild(child); / parent.replaceChild(newChild, child);
+- var t = setInterval(move, 10); / clearInterval(t);
+- element.addEventListener("click", myFunction); / element.addEventListener("mouseover", myFunction);
+- Object.assign({}, person); / Object.assign({}, person, {name: 'Bob'});
+- let a, b; / ({a, b} = {a: 'Hello ', b: 'Jack'});
