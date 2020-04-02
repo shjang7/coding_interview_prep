@@ -1,4 +1,7 @@
 # mock interviews
+- single num
+  - bit operation, XOR, reduce
+  
 - nim game
   - find pattern 1,2,3,4,5,6, ...
   - considering like staircase problem solving
