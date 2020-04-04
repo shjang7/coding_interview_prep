@@ -1,7 +1,12 @@
 # mock interviews
+- maximum subarray
+  - divide and conquer
+  - max: merge(arr, left, p), merge(arr, p, right), crossSum(arr, left, right, p)
+  - crossSum: max of p.downto(left) + max of p+1.upto(right)
+
 - longest substring
   - find / unfind case
-  
+
 - single num
   - bit operation, XOR, reduce
 
