@@ -1,4 +1,6 @@
 # mock interviews
+- group anagram
+  - Using hashMap, key is sorted word, value is original word grouped in array
 - maximum subarray
   - divide and conquer
   - max: merge(arr, left, p), merge(arr, p, right), crossSum(arr, left, right, p)
