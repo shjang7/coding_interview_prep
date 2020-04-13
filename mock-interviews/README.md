@@ -1,4 +1,12 @@
 # mock interviews
+- contiguous-array
+     _            _    _   _
+    / \          / \  / \_/
+   /   \        /   \/
+ _/     \_    _/
+          \  /
+           \/
+
 - group anagram
   - Using hashMap, key is sorted word, value is original word grouped in array
 - maximum subarray
