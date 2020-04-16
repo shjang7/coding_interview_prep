@@ -1,4 +1,11 @@
 # mock interviews
+- check-valid-string
+  - "(***)": true / ")(": false
+  - '(', ')', '*' => [low, high] range pattern
+  - simply: low += condition ? 1 : -1
+  - exception: high < 0 ? low < 0 ?
+  - return: low == 0 ? low != 0 ?
+
 - contiguous-array
      _            _    _   _
     / \          / \  / \_/
