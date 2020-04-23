@@ -1,4 +1,10 @@
 # mock interviews
+- next greater element
+  - stack
+  - increasing: remove
+  - decreasing: push
+  - HashMap.set(st.top(), currVal)
+
 - bellman ford algorithm
   - array
   - min route compare and update
