@@ -1,4 +1,10 @@
 # mock interviews
+- bellman ford algorithm
+  - array
+  - min route compare and update
+  - time[v] = Math.min(time[v], time[u] + w);
+  - maximum N repeat, no changes condition
+
 - check-valid-string
   - "(***)": true / ")(": false
   - '(', ')', '*' => [low, high] range pattern
