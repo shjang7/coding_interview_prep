@@ -142,10 +142,18 @@
   - find middle: using slow and fast pointer
   - return mergeSorting(sort(head), sort(mid));
 
+- one dimensional array
+  - javascript
+  ```
+  Array(n).fill(0)
+  Array(n).fill(Infinity)
+  ```
+
 - two dimensional array
   - javascript
   ```
-  new Array(rLen).map(new Array(cLen));
+  Array(rLen).map(Array(cLen));
+  Array.from(Array(m), () => Array(n).fill(0));
   ```
 
 - single-number
